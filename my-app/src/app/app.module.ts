@@ -3,13 +3,15 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms'; // Opted in to FormsModule
 
 import { AppComponent } from './app.component'; // Declared
-import { HeroesComponent } from './heroes/heroes.component'; // Declared component
+import { HeroesComponent } from './heroes/heroes.component';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component'; // Declared component
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent
+    HeroesComponent,
+    HeroDetailComponent
   ],
   imports: [
     BrowserModule,
