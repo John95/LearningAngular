@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms'; // Opted in to FormsModule
 import { AppComponent } from './app.component'; // Declared
 import { HeroesComponent } from './heroes/heroes.component';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component'; // Declared component
+import { HeroService } from './hero.service';
 
 
 @NgModule({
@@ -17,7 +18,9 @@ import { HeroDetailComponent } from './hero-detail/hero-detail.component'; // De
     BrowserModule,
     FormsModule // Essential step in importing process 
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+    HeroService
+  ],
+  bootstrap: [AppComponent],
 })
 export class AppModule { }
